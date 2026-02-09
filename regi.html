@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+    <div class="form-group">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+
+    <div class="form-group">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+                <option value="CS">Computer Science</option>
+                <option value="ENG">Engineering</option>
+                <option value="ART">Arts</option>
+                <option value="BIO">Biology</option>
+            </select>
+    </div>
+
+    <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="display: inline;">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="display: inline;">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other" style="display: inline;">Other</label>
+    </div>
+
+    <div class="form-group">
+        <label for="address">Mailing Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+        <label for="terms" style="display: inline;">I accept the terms and conditions</label>
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Register</button>
+    </div>
+    <a href="login.html"><button>back</button></a>
+    </form>
+
+</body>
+
+</html>
